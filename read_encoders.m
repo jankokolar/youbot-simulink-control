@@ -9,6 +9,10 @@ hitrosti = message.getVelocity;
 if strcmp(ime,'arm_joint_1')
     assignin('base','arm_position',pozicije);
     assignin('base','arm_velocities',hitrosti);
+else
+    assignin('base','base_position',pozicije);
+    assignin('base','base_velocities',hitrosti);
+    
 end
 
 
